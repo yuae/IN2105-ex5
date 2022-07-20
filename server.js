@@ -59,6 +59,33 @@ app.post('/log', (req, res) => {
 	*/
 });
 
+app.put('/log', (req, res) => {
+	//debug info
+	//console.log(req.headers)
+	console.log('put');
+	
+	data = req.body;
+	console.log(data);
+	//create new task
+	const nLog = {
+		
+	};
+	var file = './data/log.yml';
+	//var tasks = JSON.parse(fs.readFileSync(file).toString());
+	//console.log(tasks);
+	//logs.push(nTask);
+	//fs.writeFileSync(file, log);
+	res.send("Task "+req.body.id+" added");
+	//list =JSON.parse(tasklist);
+	//list.push(nTask)
+	/*
+	db.tasks.create(req.body, (err, nTask) => {
+		if (err) throw err;
+		res.send("New task added");
+	});
+	*/
+});
+
 //SERVER 
 // listen on the port 
 app.listen(process.env.PORT || 12345, () => {
