@@ -12,7 +12,7 @@ app.use(express.static(__dirname+'/res'))
 
 //DB
 //const db = require('./models');
-const log = require('./data/log.yml')
+//const log = require('./data/log.yml')
 
 //routes
 //HTML Endpoints
