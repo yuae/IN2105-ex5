@@ -37,7 +37,7 @@ app.post('/log', (req, res) => {
 	//console.log(req.headers)
 	console.log('post');
 	
-	data = req.headers;
+	data = req.params;
 	console.log(data);
 	//create new task
 	const nLog = {
