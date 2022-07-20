@@ -24,15 +24,15 @@ app.get('/ui', function homepage(req, res) {
 app.get('/', (req, res) => {
 	res.json({
 	  endpoints: [
-		{method: 'POST', path: '/add', description: 'add new log'},
-		{method: 'PUT', path: '/add', description: 'add new log'},
+		{method: 'POST', path: '/log', description: 'add new log'},
+		{method: 'PUT', path: '/log', description: 'add new log'},
 		{method: 'GET', path: '/ui', description: 'show visualization'}
 	]
 	})
 });
 
 //add new task
-app.post('/add', (req, res) => {
+app.post('/log', (req, res) => {
 	//debug info
 	//console.log(req.headers)
 	console.log('new log');
@@ -60,7 +60,7 @@ app.post('/add', (req, res) => {
 });
 
 //add new task
-app.put('/add', (req, res) => {
+app.put('/log', (req, res) => {
 	//debug info
 	//console.log(req.headers)
 	console.log('new log');
