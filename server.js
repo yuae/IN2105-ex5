@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 app.post('/log', (req, res) => {
 	//debug info
 	//console.log(req.headers)
-	console.log('new log');
+	console.log('add');
 	
 	data = req.body;
 	console.log(data);
@@ -63,7 +63,7 @@ app.post('/log', (req, res) => {
 app.put('/log', (req, res) => {
 	//debug info
 	//console.log(req.headers)
-	console.log('new log');
+	console.log('put');
 	
 	data = req.body;
 	console.log(data);
